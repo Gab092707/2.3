@@ -29,11 +29,11 @@ local A_1 =
    return self
 end
 --//
-local bankid = "9db6d62a-32eb-4429-9e39-9193dd189b30"--bank
-for i=1, 1000 do
+local bankid = "bab4ef2f-3c82-4331-9ea7-9c945688b599"--bank
+for i        = 1, 15000 do
    Bank(bankid):withdraw({}, 1)
    print('withdrawed 1 gem')
    Bank(bankid):deposit({}, 1)
    print('deposited 1 gem')
-   task.wait(2.3)
+   task.wait()
 end
